@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Volume Master</h2>
+      <span id="volume-display">100%</span>
+    </div>
+
+    <div class="slider-container">
+      <input type="range" id="volumeSlider" min="0" max="600" value="100" step="1">
+    </div>
+
+    <div class="controls">
+      <div class="toggle-group">
+        <label class="switch">
+          <input type="checkbox" id="voiceBoost">
+          <span class="slider round"></span>
+        </label>
+        <span>Voice Boost</span>
+      </div>
+
+      <div class="toggle-group">
+        <label class="switch">
+          <input type="checkbox" id="bassBoost">
+          <span class="slider round"></span>
+        </label>
+        <span>Bass Boost</span>
+      </div>
+    </div>
+
+    <div class="controls" style="margin-top: 5px;">
+      <div class="toggle-group">
+        <label class="switch">
+          <input type="checkbox" id="monoMode">
+          <span class="slider round"></span>
+        </label>
+        <span>Mono Mode</span>
+      </div>
+    </div>
+
+    <div class="reset-section">
+      <button id="resetBtn">Reset to Default</button>
+    </div>
+
+    <div class="tab-section">
+      <h4>Tabs with Audio</h4>
+      <ul id="audioTabs"></ul>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
